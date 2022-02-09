@@ -31,6 +31,19 @@
             <filefilter name="defaultFilter" desc="Files not to check">
                 <filteritem type="filename" name=".travis-libcxx-setup.sh|BUILD.bazel" desc="files are used for build by cmake, do not use them"/>
                 <filteritem type="filename" name="CONTRIBUTORS" desc="contributors of opensource product, do not use it"/>
+                <filteritem type="filename" name="WORKSPACE" desc="This file can not declare copyright"/>
+                <filteritem type="filename" name="AUTHORS" desc="This file can not declare copyright"/>
+                <filteritem type="filepath" name="src/.*" desc="sources files"/>
+                <filteritem type="filepath" name="test/.*" desc="Compile output files"/>
+                <filteritem type="filename" name="cmake/.cpp" desc="Compile output files"/>
+                <filteritem type="filename" name="bindings/python/BUILD" desc="This file can not declare copyright"/>
+                <filteritem type="filename" name="bindings/python/google_benchmark/BUILD" desc="This file can not declare copyright"/>
+                <filteritem type="filename" name="bindings/python/google_benchmark/.cc" desc="This file can not declare copyright"/>
+                <filteritem type="filename" name="test/BUILD" desc="This file can not declare copyright"/>
+                <filteritem type="filename" name="bindings/python/.bzl" desc="This file can not declare copyright"/>
+                <filteritem type="filename" name="bindings/python/.BUILD" desc="This file can not declare copyright"/>
+                <filteritem type="filename" name="conan/test_package/.cpp" desc="This file can not declare copyright"/>
+                <filteritem type="filename" name="include/benchmark/.h" desc="This file can not declare copyright"/>
             </filefilter>
             <filefilter name="defaultPolicyFilter" desc="Filters for compatibility，license header policies">
             </filefilter>
