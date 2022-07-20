@@ -15,57 +15,57 @@ import("//build/ohos.gni")
 
 # Lets callers do '#include <benchmark.h>'
 config("benchmark_config") {
-  include_dirs = [
-    "include",
-  ]
+    include_dirs = [
+        "include",
+    ]
 }
 
 # This is the configuration used to build benchmark itself.
 # It should not be needed outside of this library.
 config("benchmark_private_config") {
-  visibility = [ ":*" ]
-  include_dirs = [
-    "include",
-  ]
+    visibility = [":*"]
+    include_dirs = [
+        "include",
+    ]
 }
 
 ohos_static_library("benchmark") {
-  sources = [
-    "src/benchmark_api_internal.cc",
-    "src/benchmark_name.cc",
-    "src/benchmark.cc",
-    "src/benchmark_register.cc",
-    "src/benchmark_runner.cc",
-    "src/colorprint.cc",
-    "src/commandlineflags.cc",
-    "src/complexity.cc",
-    "src/console_reporter.cc",
-    "src/counter.cc",
-    "src/csv_reporter.cc",
-    "src/json_reporter.cc",
-    "src/reporter.cc",
-    "src/sleep.cc",
-    "src/statistics.cc",
-    "src/string_util.cc",
-    "src/sysinfo.cc",
-    "src/timers.cc",
-    "src/perf_counters.cc",
-  ]
-  
-  public_configs = [ ":benchmark_config" ]
-  configs = [ ":benchmark_private_config" ]
+    sources = [
+        "src/benchmark_api_internal.cc",
+        "src/benchmark_name.cc",
+        "src/benchmark.cc",
+        "src/benchmark_register.cc",
+        "src/benchmark_runner.cc",
+        "src/colorprint.cc",
+        "src/commandlineflags.cc",
+        "src/complexity.cc",
+        "src/console_reporter.cc",
+        "src/counter.cc",
+        "src/perf_counters.cc",
+        "src/csv_reporter.cc",
+        "src/json_reporter.cc",
+        "src/reporter.cc",
+        "src/sleep.cc",
+        "src/statistics.cc",
+        "src/string_util.cc",
+        "src/sysinfo.cc",
+        "src/timers.cc",
+    ]
+
+    public_configs = [":benchmark_config"]
+    configs = [":benchmark_private_config"]
 }
 
 ohos_static_library("benchmark_main") {
-  include_dirs = [
-    "include",
-  ]
+    include_dirs = [
+        "include",
+    ]
 
-  sources = [
-    "src/benchmark_main.cc",
-  ]
+    sources = [
+        "src/benchmark_main.cc",
+    ]
 
-  deps = [
-    ":benchmark"
-  ]
+    deps = [
+        ":benchmark"
+    ]
 }
