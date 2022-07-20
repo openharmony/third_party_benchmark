@@ -41,7 +41,6 @@ ohos_static_library("benchmark") {
     "src/complexity.cc",
     "src/console_reporter.cc",
     "src/counter.cc",
-    "src/perf_counters.cc",
     "src/csv_reporter.cc",
     "src/json_reporter.cc",
     "src/reporter.cc",
@@ -50,6 +49,7 @@ ohos_static_library("benchmark") {
     "src/string_util.cc",
     "src/sysinfo.cc",
     "src/timers.cc",
+    "src/perf_counters.cc",
   ]
   
   public_configs = [ ":benchmark_config" ]
