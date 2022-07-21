@@ -38,7 +38,6 @@
                 <filteritem type="filepath" name="cmake/.*" desc="sources files"/>
                 <filteritem type="filepath" name="bindings/python/.*" desc="This file can not declare copyright"/>
                 <filteritem type="filepath" name="bindings/python/google_benchmark/.*" desc="This file can not declare copyright"/>
-                <filteritem type="filepath" name="conan/test_package/.*" desc="This file can not declare copyright"/>
                 <filteritem type="filepath" name="include/benchmark/.*" desc="This file can not declare copyright"/>
                 <filteritem type="filename" name="test/BUILD" desc="This file can not declare copyright"/>
                 <filteritem type="filename" name="bindings/python/BUILD" desc="This file can not declare copyright"/>
