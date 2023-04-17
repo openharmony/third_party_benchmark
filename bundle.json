@@ -23,7 +23,17 @@
         },
         "build": {
             "sub_component": [],
-            "inner_kits": [],
+            "inner_kits": [
+                {
+                    "name":"//third_party/benchmark:benchmark",
+                    "header":{
+                        "header_files":[
+                            "benchmark.h"
+                        ],
+                        "header_base":"//third_party/benchmark/include"
+                    }
+                }
+            ],
             "test": []
         }
     }
