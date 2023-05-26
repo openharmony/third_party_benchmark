@@ -10,7 +10,7 @@
     "dirs": {},
     "scripts": {},
     "component": {
-        "name": "benchmark",
+        "name": "thirdparty_benchmark",
         "subsystem": "testfwk",
         "syscap": [],
         "features": [],
