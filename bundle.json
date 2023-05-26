@@ -11,7 +11,7 @@
     "scripts": {},
     "component": {
         "name": "thirdparty_benchmark",
-        "subsystem": "testfwk",
+        "subsystem": "thirdpart",
         "syscap": [],
         "features": [],
         "adapted_system_type": [],
