@@ -11,7 +11,7 @@
     "scripts": {},
     "component": {
         "name": "thirdparty_benchmark",
-        "subsystem": "thirdpart",
+        "subsystem": "thirdparty",
         "syscap": [],
         "features": [],
         "adapted_system_type": [],
