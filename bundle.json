@@ -31,7 +31,8 @@
                     "name":"//third_party/benchmark:benchmark",
                     "header":{
                         "header_files":[
-                            "benchmark.h"
+                            "benchmark.h",
+                "export.h"
                         ],
                         "header_base":"//third_party/benchmark/include"
                     }
