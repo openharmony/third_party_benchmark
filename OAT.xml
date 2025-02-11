@@ -33,8 +33,10 @@
                 <filteritem type="filename" name="CONTRIBUTORS" desc="contributors of opensource product, do not use it"/>
                 <filteritem type="filename" name="WORKSPACE" desc="This file can not declare copyright"/>
                 <filteritem type="filename" name="AUTHORS" desc="This file can not declare copyright"/>
-                <filteritem type="filepath" name="src/.*" desc="sources files"/>
+                <!--<filteritem type="filepath" name="src/.*" desc="sources files"/>-->
                 <filteritem type="filepath" name="test/.*" desc="test files"/>
+                <filteritem type="filepath" name="docs/assets/images/.*" desc="images files"/>
+                <filteritem type="filename" name="pyproject.toml" desc="config files"/>
                 <filteritem type="filepath" name="cmake/.*" desc="sources files"/>
                 <filteritem type="filepath" name="bindings/python/.*" desc="This file can not declare copyright"/>
                 <filteritem type="filepath" name="bindings/python/google_benchmark/.*" desc="This file can not declare copyright"/>
