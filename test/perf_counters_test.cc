@@ -14,7 +14,7 @@ BM_DECLARE_string(benchmark_perf_counters);
 
 static void BM_Simple(benchmark::State& state) {
   for (auto _ : state) {
-    auto iterations = state.iterations();
+    auto iterations = double(state.iterations()) * double(state.iterations());
     benchmark::DoNotOptimize(iterations);
   }
 }
@@ -79,6 +79,7 @@ CHECK_BENCHMARK_RESULTS("BM_WithoutPauseResume", &SaveInstrCountWithoutResume);
 CHECK_BENCHMARK_RESULTS("BM_WithPauseResume", &SaveInstrCountWithResume);
 
 int main(int argc, char* argv[]) {
+  benchmark::MaybeReenterWithoutASLR(argc, argv);
   if (!benchmark::internal::PerfCounters::kSupported) {
     return 0;
   }
